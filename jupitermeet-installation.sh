@@ -664,7 +664,7 @@ if [ -f /etc/lsb-release ]; then
     vernum=$(cut -f2 <<< "$release")
 
     # check is it ubuntu 18.04
-    if [ $vernum == 18.04 ]; then
+    if [ $vernum > 18.04 ]; then
 
         # check zip folder existence
         if [ -f jupitermeet.zip ]; then
